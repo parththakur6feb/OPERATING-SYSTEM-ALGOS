@@ -55,46 +55,12 @@ int main()
           
     }
 
+    printf("\nProcess\tAT\tBT\tCT\tWT\tTAT\n");
 
-        // time_t current_time = time(NULL); 
-        // printf("%s", ctime(&current_time));
-
-        printf("\nProcess id ");
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ",pid[i]);
-        }
-        printf("\narival time ");
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ",at);
-        }
-        printf("\nbust time ");
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ",bt[i]);
-        }
-        printf("\ncompletion time ");
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ",ct[i]);
-        }
-        printf("\nturn around time ");
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ",tat[i]);
-        }
-        printf("\nwaiting time ");
-        for (int i = 0; i < n; i++)
-        {
-            printf("%d ",wt[i]);
-        }
-
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     // printf("%d", bt[i]);
-    //     printf("%d", pid[i]);
-    // }
+    for (int i = 0; i < n; i++)
+    {
+        printf("P%d\t%d\t%d\t%d\t%d\t%d\n", i + 1, at, bt[i], ct[i], wt[i], tat[i]);
+    }
 
     return 0;
 }

@@ -41,37 +41,13 @@ int main()
 
         tat[i] = ct[i] - at[i];
         wt[i] = tat[i] - bt[i];
-        // printf("%d\n", ct[i]);
-        // printf("%d\n", tat[i]);
-        // printf("%d\n", wt[i]);
-
+    
     }
 
-    printf("\narival time ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", at[i]);
+   printf("\nProcess\tAT\tBT\tCT\tWT\tTAT\n");
+    
+    for (int i = 0; i < n; i++){
+        printf("P%d\t%d\t%d\t%d\t%d\t%d\n", i + 1, at[i], bt[i], ct[i], wt[i], tat[i]);
     }
-    printf("\nbust time ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", bt[i]);
-    }
-    printf("\ncompletion time ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", ct[i]);
-    }
-    printf("\nturn around time ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", tat[i]);
-    }
-    printf("\nwaiting time ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", wt[i]);
-    }
-
     return 0;
 }
