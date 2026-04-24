@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/parth/Downloads/Operating system",
-      "program": "c:/Users/parth/Downloads/Operating system/build/Debug/outDebug",
+      "cwd": "c:/Users/parth/Downloads/Operating system/cpu scheduling",
+      "program": "c:/Users/parth/Downloads/Operating system/cpu scheduling/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
